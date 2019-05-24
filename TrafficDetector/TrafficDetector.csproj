@@ -154,6 +154,9 @@
     <Content Include="Readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\stop_sign_detected.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\wrong.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

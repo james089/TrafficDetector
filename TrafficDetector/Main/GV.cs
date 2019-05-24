@@ -13,7 +13,7 @@ namespace TrafficDetector.Main
     class GV
     {
         public static System.Media.SoundPlayer Sound_wrong = new System.Media.SoundPlayer(
-            Environment.CurrentDirectory + @"\Resources\wrong.wav");
+            Environment.CurrentDirectory + @"\Resources\stop_sign_detected.wav");
 
         public static int imgWidth = 0, imgHeight = 0;
         public static double _zoomFactor = 0;
