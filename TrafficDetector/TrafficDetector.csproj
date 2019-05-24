@@ -60,9 +60,6 @@
     <ApplicationIcon>trafficlight_512_q30_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CameraToImage_dll_x64">
-      <HintPath>references\CameraToImage_dll_x64.dll</HintPath>
-    </Reference>
     <Reference Include="Emgu.CV">
       <HintPath>references\Emgu.CV.dll</HintPath>
     </Reference>
