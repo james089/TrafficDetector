@@ -9,6 +9,7 @@ using TrafficDetector.Main;
 using TrafficDetector.Services;
 using static TrafficDetector.Main.GV;
 using static TrafficDetector.YOLO.YoloSharpCore;
+using System.Speech.Synthesis;
 
 namespace TrafficDetector
 {

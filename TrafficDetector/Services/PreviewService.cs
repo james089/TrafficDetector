@@ -84,7 +84,9 @@ namespace TrafficDetector.Services
 
             if (isStopSignDetected && !isBlinking)
             {
-                GV.Sound_wrong.Play();
+                GV.RobotVoice.Volume = 100;         // 0...100
+                GV.RobotVoice.Rate = 0;             // -10...10
+                GV.RobotVoice.SpeakAsync("Stop Sign Detected");
                 isBlinking = true;
                 MainWindow.mMainWindow.Panel_stop.Visibility = System.Windows.Visibility.Visible;
                 AniShape.blink(MainWindow.mMainWindow.Panel_stop, true);
@@ -104,7 +106,15 @@ namespace TrafficDetector.Services
         {
             IsCapturing = true;
             previewFPS FPS = (previewFPS)e.Argument;
-            Capture webcam = new Capture();
+            Capture webcam;
+            try
+            {
+                webcam = new Capture();
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
 
             while (!previewRoutine.CancellationPending)
             {

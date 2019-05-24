@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,8 +13,10 @@ namespace TrafficDetector.Main
 {
     class GV
     {
-        public static System.Media.SoundPlayer Sound_wrong = new System.Media.SoundPlayer(
-            Environment.CurrentDirectory + @"\Resources\stop_sign_detected.wav");
+        //public static System.Media.SoundPlayer Sound_wrong = new System.Media.SoundPlayer(
+        //    Environment.CurrentDirectory + @"\Resources\stop_sign_detected.wav");
+
+        public static SpeechSynthesizer RobotVoice = new SpeechSynthesizer();
 
         public static int imgWidth = 0, imgHeight = 0;
         public static double _zoomFactor = 0;
